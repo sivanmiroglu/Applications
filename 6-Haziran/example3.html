@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <span></span>
+   <span></span>
+   <span></span>
+   <div>
+       <button onclick="goster()">Göster</button>
+   </div>
+</body>
+</html>
+<!-- Ekrana bir buton 3 tane span koy. Butona tıkladığında 3 spanın da içine “Siemens” yazsın -->
+<script>
+
+function goster() {
+
+    var allspans=document.getElementsByTagName('span');
+    for(i =0; i < allspans.length; i++) {
+      allspans[i].inenerHTML = "Siemens";
+    }
+}
+</script>
