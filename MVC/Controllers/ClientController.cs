@@ -11,8 +11,6 @@ namespace MVC.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-           
-
             return View();
         }
 

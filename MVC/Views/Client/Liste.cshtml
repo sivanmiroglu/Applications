@@ -5,18 +5,18 @@
     <table>
 
         <tr>
-            <td>UserName</td>
-            <td>City</td>
-            <td>Country</td>
+            <td><h3>UserName</h3></td>
+            <td><h3>City</h3></td>
+            <td><h3>Country</h3></td>
         </tr>
         
 @foreach (var item in Model)
 {
 
       <tr>
-          <td> <a href = "/Client/Liste/@item.UserName"> @item.UserName</td>
-          <td> <a href = "/Client/Liste/@item.City"> @item.City</td>
-          <td> <a href = "/Client/Liste/@item.Country"> @item.Country</td>
+          <td><h2>@item.UserName</h2></td>
+          <td><h2> @item.City</h2></td>
+          <td><h2>@item.Country</h2></td>
       </tr>
 
     
