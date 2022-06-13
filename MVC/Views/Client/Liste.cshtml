@@ -1,0 +1,26 @@
+﻿@using MVC.Models.ORM;
+
+@model List<Client>;
+
+    <table>
+
+        <tr>
+            <td>UserName</td>
+            <td>City</td>
+            <td>Country</td>
+        </tr>
+        
+@foreach (var item in Model)
+{
+
+      <tr>
+          <td> <a href = "/Client/Liste/@item.UserName"> @item.UserName</td>
+          <td> <a href = "/Client/Liste/@item.City"> @item.City</td>
+          <td> <a href = "/Client/Liste/@item.Country"> @item.Country</td>
+      </tr>
+
+    
+
+  
+}
+    </table>
