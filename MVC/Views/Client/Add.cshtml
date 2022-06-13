@@ -1,7 +1,21 @@
 ﻿@model MVC.Models.ORM.Client
 
+<style>
+    #btn {
+        width: 50px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        font-size: 14pt;
+    }
+
+        #btn:hover {
+            cursor: pointer;
+        }
+
+</style>
 <form action="/Client/Add" method="post">
-    
+
     <div>
 
         @Html.LabelFor(x => x.UserName)
@@ -13,7 +27,7 @@
 
         @Html.LabelFor(x => x.City)
         @Html.TextBoxFor(x => x.City)
-          
+
     </div>
 
     <div>
@@ -23,8 +37,8 @@
 
     </div>
 
-<div>
-        <button type="submit" >  Add   </button>
+    <div>
+        <button id="btn" type="submit">Add</button>
 
     </div>
 

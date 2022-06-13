@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using MVC.Models.ORM;
 
 namespace MVC.Models.ORM
@@ -11,5 +12,8 @@ namespace MVC.Models.ORM
         }
 
         public DbSet<Client> Clients { get; set; }
-    }
+
+        public DbSet<Book> Books { get; set; }
+       
+      }
 }

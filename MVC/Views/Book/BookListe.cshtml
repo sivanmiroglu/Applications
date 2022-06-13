@@ -1,0 +1,24 @@
+﻿
+@using MVC.Models.ORM;
+@model List<Book>;
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Writer</td>
+        <td>Description</td>
+      
+    </tr>
+
+  
+    @foreach (var item in @Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Writer</td>
+            <td>@item.Description</td>
+
+
+        </tr>
+    }
+
+</table>
