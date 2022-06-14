@@ -30,3 +30,19 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/Z004J86X/Desktop/Applications/MVC/Views/Client/Liste.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XExpc3RlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Z004J86X/Desktop/Applications/MVC/Views/Restorant/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdG9yYW50XEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Z004J86X/Desktop/Applications/MVC/Views/Restorant/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdG9yYW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Z004J86X/Desktop/Applications/MVC/Views/Restorant/Liste.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdG9yYW50XExpc3RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Z004J86X/Desktop/Applications/MVC/Views/Restorant/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzdG9yYW50XFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

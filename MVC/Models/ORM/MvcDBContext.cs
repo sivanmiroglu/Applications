@@ -14,6 +14,8 @@ namespace MVC.Models.ORM
         public DbSet<Client> Clients { get; set; }
 
         public DbSet<Book> Books { get; set; }
+
+        public DbSet<Restorant> Restorants { get; set; }
        
       }
 }

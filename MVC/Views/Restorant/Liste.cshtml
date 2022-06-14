@@ -1,0 +1,30 @@
+﻿@using MVC.Models.ORM;
+
+@model List<Restorant>;
+
+<table>
+    <tr>
+        <td>Id</td>
+        <td> Name </td>
+        <td>Adress</td>
+        <td> Phone </td>
+        <td> City </td>
+        <td> Region </td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.Id </td>
+            <td> @item.Name </td>
+            <td>@item.Adress</td>
+            <td> @item.Phone </td>
+            <td> @item.City </td>
+            <td> @item.Region </td>
+            <td><input type="button" onclick="location.href='/Restorant/Update/@item.Id';" value="Update" /></td>
+            <td><input type="button" onclick="location.href='/Restorant/Delete/@item.Id';" value="Delete" /></td>
+        </tr>
+    }
+
+
+</table>

@@ -1,0 +1,43 @@
+﻿@model MVC.Models.ORM.Restorant;
+
+
+<form action="/Restorant/Update" method="post">
+
+ 
+
+    <div>
+        @Html.LabelFor(q => q.Id)
+        @Html.TextAreaFor(q => q.Id)
+    </div>
+
+    <div>
+        @Html.LabelFor(q => q.Name)
+        @Html.TextBoxFor(q => q.Name)
+    </div>
+
+    <div>
+        @Html.LabelFor(q => q.Adress)
+        @Html.TextAreaFor(q => q.Adress)
+    </div>
+
+    <div>
+        @Html.LabelFor(q => q.Phone)
+        @Html.TextBoxFor(q => q.Phone)
+    </div>
+
+    <div>
+        @Html.LabelFor(q => q.City)
+        @Html.TextBoxFor(q => q.City)
+    </div>
+
+    <div>
+        @Html.LabelFor(q => q.Region)
+        @Html.TextBoxFor(q => q.Region)
+    </div>
+
+    <div>
+        <button type="submit"> Update </button>
+    </div>
+
+
+</form>
