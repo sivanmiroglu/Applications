@@ -1,0 +1,31 @@
+﻿@model MVC.Models.ORM.Book;
+       
+
+<form action="/Book/Update" method="post">
+    
+     <div>
+        @Html.LabelFor(q => q.Id)
+        @Html.TextAreaFor(q => q.Id)
+    </div>
+
+          <div>
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name)
+      </div>
+   
+    <div>
+        @Html.LabelFor(x => x.Writer)
+        @Html.TextBoxFor(x => x.Writer)
+    </div>
+         
+    
+    <div>
+     @Html.LabelFor(x => x.Description)
+       @Html.TextAreaFor(x => x.Description)
+    </div>
+
+    <div>
+        <button type="submit">Update</button>
+    </div>
+
+</form>

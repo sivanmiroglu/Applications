@@ -26,10 +26,11 @@ namespace MVC.Controllers
            return RedirectToAction("Liste");
         }
 
+
         public IActionResult Liste()
         {
-            List<Restorant> restorants = mvcDBContext.Restorants.ToList();
-            return View(restorants);
+            List<Restorant> ResList = mvcDBContext.Restorants.ToList();
+            return View(ResList);
         }
 
         [HttpGet]
@@ -56,7 +57,9 @@ namespace MVC.Controllers
             mvcDBContext.SaveChanges();
 
             return RedirectToAction("Liste");
-        }
+        } 
+
+
   
     }
 }

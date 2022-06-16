@@ -10,7 +10,7 @@ namespace MVC.Controllers
 
         [HttpGet]
         public IActionResult Add()
-        {   
+        {
             return View();
         }
 
@@ -28,6 +28,32 @@ namespace MVC.Controllers
             List<Book> Booklist = mvcDBContext.Books.ToList();
 
             return View(Booklist);
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var bookup = mvcDBContext.Books.FirstOrDefault(x => x.Id == id);
+            return View(bookup);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Book book)
+        {
+            mvcDBContext.Update(book);
+            mvcDBContext.SaveChanges();
+
+            return RedirectToAction("BookListe");
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var bookdel = mvcDBContext.Books.FirstOrDefault(q => q.Id == id);
+            mvcDBContext.Remove(bookdel);
+            mvcDBContext.SaveChanges();
+
+            return RedirectToAction("BookListe");
         }
     }
 }

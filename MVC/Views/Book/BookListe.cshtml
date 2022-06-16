@@ -4,6 +4,7 @@
 
 <table>
     <tr>
+        <td>Id</td>
         <td>Name</td>
         <td>Writer</td>
         <td>Description</td>
@@ -14,11 +15,12 @@
     @foreach (var item in @Model)
     {
         <tr>
+            <td>@item.Id</td>
             <td>@item.Name</td>
             <td>@item.Writer</td>
             <td>@item.Description</td>
-
-
+             <td><input type="button" onclick="location.href='/Book/Update/@item.Id';" value="Update" /></td>
+             <td><input type="button" onclick="location.href='/Book/Delete/@item.Id':" value="Delete"/></td>
         </tr>
     }
 

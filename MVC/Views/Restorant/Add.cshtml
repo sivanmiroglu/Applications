@@ -1,6 +1,11 @@
 ﻿@model MVC.Models.ORM.Restorant
 
 <form action="/Restorant/Add" method="post">
+
+    <div>
+        @Html.LabelFor(q=>q.Id)
+        @Html.TextBoxFor(q=>q.Id)
+    </div>
     
 <div>
     @Html.LabelFor(q => q.Name)
